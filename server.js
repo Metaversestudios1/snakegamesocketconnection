@@ -48,7 +48,7 @@ io.on('connection', (socket) => {
     // Additional Socket.IO event handlers can be added here
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 9000;
 server.listen(PORT, () => {
     console.log(`Socket.IO server listening on port ${PORT}`);
 });

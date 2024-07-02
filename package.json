@@ -2,7 +2,7 @@
   "name": "usersocket",
   "version": "1.0.0",
   "description": "connect user to game",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
