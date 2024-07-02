@@ -10,6 +10,10 @@ const io = socketIo(server);
 
 app.use(bodyParser.json()); // Parse JSON bodies
 
+app.get('/', (req, res) => {
+    res.json({ message: "first page" });
+});
+
 // API endpoint to receive data and forward it via Socket.IO
 app.post('/sendUserData', async (req, res) => {
     const data = req.body;
