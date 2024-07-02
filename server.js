@@ -1,3 +1,4 @@
+
 const axios = require('axios');
 const express = require('express');
 const app = express();
@@ -30,7 +31,7 @@ io.on('connection', (socket) => {
 
         try {
             // Forward userData to the game developer API using Axios
-            const response = await axios.post('https://api.gamedeveloper.com/userData', userData, {
+            const response = await axios.post('https://snakegameadmin.000webhostapp.com/sendUserData', userData, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
