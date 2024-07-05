@@ -49,7 +49,7 @@ io.on('connection', (socket) => {
             // Forward userData to the game developer API using Axios
             //const response = await axios.post('http://localhost/admin_pannel/sendUserData', userData, {
            
-            const response = await axios.post('https://snakegameadmin.000webhostapp.com/sendUserData', userData, {
+            const response = await axios.post('https://snakegameadmin.000webhostapp.com/gameplay', userData, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
