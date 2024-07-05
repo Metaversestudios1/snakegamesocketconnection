@@ -20,7 +20,7 @@ app.post('/fetchUserData', (req, res) => {
   
 });
 
-app.post('/sendUserData', async (req, res) => {
+app.post('/gameplay', async (req, res) => {
     const data = req.body;
     const { id } = data; 
    io.emit('fetchUserData', id);
